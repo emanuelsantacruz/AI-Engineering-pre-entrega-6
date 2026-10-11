@@ -1,0 +1,42 @@
+{
+  "query": "Tengo un presupuesto de $850.000 para armar una PC gamer. Recomiéndame procesador, placa de video, memoria RAM y fuente. Calcula si me alcanza el dinero y de cuántos Watts tiene que ser la fuente para que funcione bien.",
+  "trace": [
+    {
+      "nodo": "supervisor",
+      "iteracion": 1,
+      "next_agent": "researcher",
+      "motivo": "Aún no se investigaron componentes para la consulta del usuario."
+    },
+    {
+      "nodo": "researcher",
+      "iteracion": null,
+      "next_agent": null,
+      "motivo": null
+    },
+    {
+      "nodo": "supervisor",
+      "iteracion": 2,
+      "next_agent": "analyst",
+      "motivo": "Componentes recolectados. Se requiere calcular el costo total y el consumo energético."
+    },
+    {
+      "nodo": "analyst",
+      "iteracion": null,
+      "next_agent": null,
+      "motivo": null
+    },
+    {
+      "nodo": "supervisor",
+      "iteracion": 3,
+      "next_agent": "validator",
+      "motivo": "Tanto la investigación como el análisis fueron completados. Procediendo a validar."
+    },
+    {
+      "nodo": "validator",
+      "iteracion": null,
+      "next_agent": "FINISH",
+      "motivo": null
+    }
+  ],
+  "final_synthesis": "Presupuesto de PC Gamer Recomendado:\n\n1. Procesador: AMD Ryzen 5 7600 ($240.000, 65W TDP, Socket AM5)\n2. Placa de Video: NVIDIA GeForce RTX 4060 8GB ($360.000, 115W TDP, 1080p Ultra)\n3. Memoria RAM: Corsair Vengeance 16GB DDR5 5600MHz ($85.000, 10W)\n4. Fuente: Corsair CV650 650W 80 Plus Bronze ($80.000)\n\nBalance Financiero:\n- Costo Total: $765.000\n- Presupuesto Límite: $850.000\n- Margen Disponible: $85.000 (utilizaste el 90% del presupuesto)\n\nConsumo Eléctrico:\n- Consumo Estimado: ~230W\n- Potencia Recomendada: Fuente de 550W a 650W 80 Plus (la fuente de 650W elegida trabaja con excelente margen térmico y eficiencia)."
+}
